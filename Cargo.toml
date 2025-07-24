@@ -20,7 +20,7 @@ scalar = ["dep:utoipa-scalar"]
 
 
 [workspace.dependencies]
-loco-rs = { version = "0.16", default-features = false }
+loco-rs = { version = "0.16.2", git = "https://github.com/BigtoC/loco", branch = "feature/decouple-auth-jwt-and-with-db", default-features = false }
 
 [dependencies]
 loco-rs = { workspace = true }
