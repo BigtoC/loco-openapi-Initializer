@@ -73,6 +73,7 @@ pub struct OpenAPIConfig {
     ///       url: /redoc
     /// ```
     #[cfg(feature = "redoc")]
+    #[serde(flatten)]
     pub redoc: Option<OpenAPIType>,
     /// Scalar configuration
     /// Example:
@@ -83,6 +84,7 @@ pub struct OpenAPIConfig {
     ///       url: /scalar
     /// ```
     #[cfg(feature = "scalar")]
+    #[serde(flatten)]
     pub scalar: Option<OpenAPIType>,
     /// Swagger configuration
     /// Example:
@@ -94,6 +96,7 @@ pub struct OpenAPIConfig {
     ///       spec_json_url: /openapi.json
     /// ```
     #[cfg(feature = "swagger")]
+    #[serde(flatten)]
     pub swagger: Option<OpenAPIType>,
 }
 
